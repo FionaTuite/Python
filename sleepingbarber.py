@@ -35,7 +35,7 @@ class Customer(Thread):
         self.chair = False  # barber chair is empty
         self.lock = Lock()
     def wait(self):
-        time.sleep(random.randint(2,5))
+        time.sleep(random.randint(2,5)) 
 
     def run(self):
         with self.lock:
